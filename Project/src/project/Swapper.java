@@ -2,7 +2,7 @@ package project;
 
 /**
  *
- * @author Vincent
+ * @author Jeff
  */
 public class Swapper {
 
@@ -11,6 +11,7 @@ public class Swapper {
 
     public String print(String s, int pos) {
         if (s.length() == 0) {
+            // No input? Return empty string.
             return swappedWord;
         } else {
             if (s.length() == 1) {

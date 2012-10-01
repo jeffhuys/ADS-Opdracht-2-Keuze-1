@@ -2,7 +2,7 @@ package project;
 
 /**
  *
- * @author Vincent
+ * @author Jeff
  */
 public class Main {
     private static Swapper swapper;
@@ -11,7 +11,7 @@ public class Main {
         swapper = new Swapper();
 
         long timerStart = System.currentTimeMillis();
-        System.out.println(swapper.print("abcdefg", 1));
+        System.out.println(swapper.print("poepiehee", 1));
         System.out.println("Took " + (System.currentTimeMillis() - timerStart) + "ms");
     }
 }
