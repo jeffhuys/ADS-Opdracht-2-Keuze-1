@@ -5,13 +5,18 @@ package project;
  * @author Jeff
  */
 public class Main {
-    private static Swapper swapper;
-
     public static void main(String[] args) {
-        swapper = new Swapper();
+        Swapper swapper = new Swapper();
 
+        // Swapper
         long timerStart = System.currentTimeMillis();
-        System.out.println(swapper.print("poepiehee", 1));
+        String swapped = swapper.print("poepiehee", 1);
+        System.out.println(swapped);
         System.out.println("Took " + (System.currentTimeMillis() - timerStart) + "ms");
+
+        // Palindroom
+        PalindroomCheck p = new PalindroomCheck();
+        boolean palindroom = p.checkPalindroom("parterretrap");
+        System.out.println("Palindroom: " + palindroom);
     }
 }
